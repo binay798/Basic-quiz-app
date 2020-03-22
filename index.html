@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        @media all and (max-width: 600px){
+           .container-fluid > #heading{
+               font-size: 25px;
+           }
+        }
+        @media all and (min-width: 601px){
+           .container-fluid > #heading{
+               font-size: 50px;
+           }
+        }
+        @media all and (max-width: 320px){
+           h2{
+               font-size: 16px;
+           }
+           .container-fluid>#heading{
+               font-size: 20px;
+           }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-primary">
+        <h1 id="heading" style="color:white;text-align: center;">Multiple Choice Questions</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4 ">
+                <h2>Which is the most popular programming language?</h2>
+                <input type="radio" name="q1" value="Python"><span class="mr-4">Python</span>
+                <input type="radio"  name="q1" value="Javascript"><span class="mr-4">Javascript</span>
+            </div>
+            <div class="col-12 mb-4 ">
+                <h2>Grand Central Terminal, Park Avenue, New York is the world's</h2>
+                <input type="radio"  name="q2" value="largest railway station"><span class="mr-4">largest railway station</span>
+                <input type="radio"   name="q2" value="highest railway station"><span class="mr-4">	highest railway station</span>
+                
+            </div>
+            <div class="col-12 mb-4 ">
+                <h2>Entomology is the science that studies</h2>
+                <input type="radio"  name="q3" value="Behavior of human beings"><span class="mr-4">Behavior of human beings</span>
+                <input type="radio"   name="q3" value="Insects"><span class="mr-4">Insects</span>
+            </div>
+            <div class="col-12 mb-4 ">
+                <h2>For the Olympics and World Tournaments, the dimensions of basketball court are</h2>
+                <input type="radio"  name="q4" value="27 m x 16 m"><span class="mr-4">27 m x 16 m</span>
+                <input type="radio"   name="q4" value="28 m x 15 m"><span class="mr-4">28 m x 15 m</span>
+            </div>
+            <div class="col-12 mb-4">
+                <h2>Each year World Red Cross and Red Crescent Day is celebrated on</h2>
+                <input type="radio"  name="q5" value="May 8"><span class="mr-4">May 8</span>
+                <input type="radio"   name="q5" value="June 18"><span class="mr-4">June 18</span>
+            </div>
+            <div class="col-12" ">
+                <span style="float:right;"><input type="button" onclick="func()" class="btn btn-primary"  value="Submit"></span>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
